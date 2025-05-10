@@ -37,7 +37,7 @@ const ContactPage = () => {
                     </div>
                     <div className="ml-4">
                       <h3 className="text-lg font-semibold text-gray-900">Telefone</h3>
-                      <p className="text-gray-600">(85) 9 8510-0929</p>
+                      <p className="text-gray-600">(85) 9 8510-0928</p>
                       <p className="text-gray-600">(WhatsApp disponível)</p>
                     </div>
                   </div>
@@ -83,12 +83,16 @@ const ContactPage = () => {
         <section className="py-10 bg-squad-light">
           <div className="container mx-auto px-4 md:px-6">
             <div className="h-96 bg-gray-300 rounded-lg shadow-inner w-full">
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <div className="text-center">
-                  <MapPin className="h-12 w-12 mx-auto mb-2" />
-                  <p>Mapa será carregado aqui</p>
-                </div>
-              </div>
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.073128970961!2d-38.50364162427696!3d-3.801213943757603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7462398d858f7%3A0xfec6d58a8ab96e9!2sAv.%20Padre%20Jos%C3%A9%20Holanda%20do%20Vale%2C%20600%20-%20Cidade%20dos%20Funcion%C3%A1rios%2C%20Fortaleza%20-%20CE!5e0!3m2!1spt-BR!2sbr!4v1706410437241!5m2!1spt-BR!2sbr" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-lg"
+              ></iframe>
             </div>
           </div>
         </section>
