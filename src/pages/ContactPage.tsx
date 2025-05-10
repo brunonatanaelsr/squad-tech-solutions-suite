@@ -37,8 +37,8 @@ const ContactPage = () => {
                     </div>
                     <div className="ml-4">
                       <h3 className="text-lg font-semibold text-gray-900">Telefone</h3>
-                      <p className="text-gray-600">(11) 99999-9999</p>
-                      <p className="text-gray-600">(11) 5555-5555</p>
+                      <p className="text-gray-600">(85) 9 8510-0929</p>
+                      <p className="text-gray-600">(WhatsApp disponível)</p>
                     </div>
                   </div>
                   
@@ -49,7 +49,6 @@ const ContactPage = () => {
                     <div className="ml-4">
                       <h3 className="text-lg font-semibold text-gray-900">E-mail</h3>
                       <p className="text-gray-600">contato@squadsolucoes.com.br</p>
-                      <p className="text-gray-600">suporte@squadsolucoes.com.br</p>
                     </div>
                   </div>
                   
@@ -59,9 +58,8 @@ const ContactPage = () => {
                     </div>
                     <div className="ml-4">
                       <h3 className="text-lg font-semibold text-gray-900">Escritório</h3>
-                      <p className="text-gray-600">Av. Paulista, 1000</p>
-                      <p className="text-gray-600">Bela Vista, São Paulo - SP</p>
-                      <p className="text-gray-600">CEP: 01310-100</p>
+                      <p className="text-gray-600">Av. Pe. José Holanda do Vale, 600</p>
+                      <p className="text-gray-600">Fortaleza - CE</p>
                     </div>
                   </div>
                 </div>

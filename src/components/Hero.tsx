@@ -35,7 +35,7 @@ const Hero = () => {
             
             <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4">
               <div className="bg-white p-4 rounded-lg shadow-md text-center">
-                <div className="text-squad-primary font-bold text-xl mb-1">6+</div>
+                <div className="text-squad-primary font-bold text-xl mb-1">7+</div>
                 <div className="text-gray-600 text-sm">Anos no mercado</div>
               </div>
               <div className="bg-white p-4 rounded-lg shadow-md text-center">
