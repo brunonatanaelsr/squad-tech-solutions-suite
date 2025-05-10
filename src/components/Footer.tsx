@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">
-              Squad<span className="text-squad-secondary">Tech</span>
+              Squad<span className="text-squad-secondary">Soluções</span>
             </h3>
             <p className="mb-4 text-gray-300">
               Oferecemos soluções tecnológicas inovadoras e estratégicas, que otimizem a operação, 
@@ -86,12 +86,12 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={16} className="mr-2" />
-                <span>contato@squadtech.com.br</span>
+                <span>contato@squadsolucoes.com.br</span>
               </li>
             </ul>
             <div className="mt-6">
               <a 
-                href="https://api.whatsapp.com/send?phone=5511999999999&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20SquadTech!" 
+                href="https://api.whatsapp.com/send?phone=5511999999999&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Squad%20Soluções!" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md flex items-center justify-center w-full"
@@ -106,7 +106,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} Squad Soluções Tecnológicas e Consultoria. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Squad Soluções. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

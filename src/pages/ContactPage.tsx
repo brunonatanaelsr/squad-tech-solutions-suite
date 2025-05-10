@@ -48,8 +48,8 @@ const ContactPage = () => {
                     </div>
                     <div className="ml-4">
                       <h3 className="text-lg font-semibold text-gray-900">E-mail</h3>
-                      <p className="text-gray-600">contato@squadtech.com.br</p>
-                      <p className="text-gray-600">suporte@squadtech.com.br</p>
+                      <p className="text-gray-600">contato@squadsolucoes.com.br</p>
+                      <p className="text-gray-600">suporte@squadsolucoes.com.br</p>
                     </div>
                   </div>
                   
