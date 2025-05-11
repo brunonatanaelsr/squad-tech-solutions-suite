@@ -52,44 +52,53 @@ const Hero = () => {
           <div className="relative">
             <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-squad-secondary opacity-10 rounded-full blur-3xl animate-pulse-slow"></div>
             <div className="relative z-10">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="relative overflow-hidden rounded-lg shadow-lg">
-                  <img 
-                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
-                    alt="Tecnologia moderna" 
-                    className="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"
-                  />
+              <div className="relative bg-white shadow-xl rounded-2xl p-6 animate-float">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-squad-light rounded-lg p-4">
+                    <div className="h-8 w-8 rounded-full bg-squad-primary mb-2"></div>
+                    <div className="h-2 w-3/4 bg-gray-300 rounded mb-1"></div>
+                    <div className="h-2 w-1/2 bg-gray-300 rounded"></div>
+                  </div>
+                  <div className="bg-squad-light rounded-lg p-4">
+                    <div className="h-8 w-8 rounded-full bg-squad-secondary mb-2"></div>
+                    <div className="h-2 w-3/4 bg-gray-300 rounded mb-1"></div>
+                    <div className="h-2 w-1/2 bg-gray-300 rounded"></div>
+                  </div>
+                  <div className="bg-squad-light rounded-lg p-4">
+                    <div className="h-8 w-8 rounded-full bg-squad-dark mb-2"></div>
+                    <div className="h-2 w-3/4 bg-gray-300 rounded mb-1"></div>
+                    <div className="h-2 w-1/2 bg-gray-300 rounded"></div>
+                  </div>
+                  <div className="bg-squad-light rounded-lg p-4">
+                    <div className="h-8 w-8 rounded-full bg-blue-400 mb-2"></div>
+                    <div className="h-2 w-3/4 bg-gray-300 rounded mb-1"></div>
+                    <div className="h-2 w-1/2 bg-gray-300 rounded"></div>
+                  </div>
                 </div>
-                <div className="relative overflow-hidden rounded-lg shadow-lg">
-                  <img 
-                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" 
-                    alt="Desenvolvimento de software" 
-                    className="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"
-                  />
-                </div>
-                <div className="relative overflow-hidden rounded-lg shadow-lg">
-                  <img 
-                    src="https://images.unsplash.com/photo-1531297484001-80022131f5a1" 
-                    alt="Soluções tecnológicas" 
-                    className="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"
-                  />
-                </div>
-                <div className="relative overflow-hidden rounded-lg shadow-lg">
-                  <img 
-                    src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
-                    alt="Consultoria empresarial" 
-                    className="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"
-                  />
+                <div className="mt-4 bg-squad-gray h-32 rounded-lg relative overflow-hidden">
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-squad-primary to-squad-secondary"></div>
+                  <div className="p-3">
+                    <div className="h-2 w-1/4 bg-white rounded mb-2"></div>
+                    <div className="flex space-x-1">
+                      <div className="h-2 w-2 bg-squad-primary rounded-full"></div>
+                      <div className="h-2 w-2 bg-squad-secondary rounded-full"></div>
+                      <div className="h-2 w-2 bg-squad-dark rounded-full"></div>
+                    </div>
+                    <div className="mt-4 grid grid-cols-3 gap-2">
+                      <div className="h-16 bg-white/40 rounded"></div>
+                      <div className="h-16 bg-white/40 rounded"></div>
+                      <div className="h-16 bg-white/40 rounded"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              
               <div className="absolute top-1/2 right-0 transform translate-x-1/4 -translate-y-1/2 bg-squad-primary text-white p-4 rounded-xl shadow-lg">
-                <div className="text-lg font-bold">7+ anos</div>
-                <div className="text-sm">de experiência</div>
+                <div className="h-6 w-6 rounded-full bg-white mb-2 mx-auto"></div>
+                <div className="h-2 w-16 bg-white/50 rounded mx-auto"></div>
               </div>
               <div className="absolute bottom-0 left-0 transform -translate-x-1/4 translate-y-1/4 bg-squad-secondary text-white p-3 rounded-lg shadow-lg">
-                <div className="text-lg font-bold">Inovação</div>
-                <div className="text-xs">& Tecnologia</div>
+                <div className="h-5 w-5 rounded-full bg-white mb-2 mx-auto"></div>
+                <div className="h-2 w-12 bg-white/50 rounded mx-auto"></div>
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@ import React from 'react';
 const WhatsAppButton = () => {
   return (
     <a
-      href="https://api.whatsapp.com/send?phone=5585985100928&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Squad%20Soluções!"
+      href="https://api.whatsapp.com/send?phone=5585985100929&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Squad%20Soluções!"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors z-50"

@@ -82,7 +82,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center">
                 <Phone size={16} className="mr-2" />
-                <span>(85) 9 8510-0928</span>
+                <span>(85) 9 8510-0929</span>
               </li>
               <li className="flex items-center">
                 <Mail size={16} className="mr-2" />
@@ -91,7 +91,7 @@ const Footer = () => {
             </ul>
             <div className="mt-6">
               <a 
-                href="https://api.whatsapp.com/send?phone=5585985100928&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Squad%20Soluções!" 
+                href="https://api.whatsapp.com/send?phone=5585985100929&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Squad%20Soluções!" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md flex items-center justify-center w-full"
