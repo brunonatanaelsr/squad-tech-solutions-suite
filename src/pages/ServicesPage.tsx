@@ -132,14 +132,6 @@ const ServicesPage = () => {
               <p className="text-lg text-gray-600">
                 Conheça todas as soluções tecnológicas e consultivas que oferecemos para transformar e potencializar seu negócio.
               </p>
-              
-              <div className="mt-10">
-                <img 
-                  src="/lovable-uploads/000a65a5-0341-4063-8990-c45877a140ad.png" 
-                  alt="Equipe de profissionais trabalhando" 
-                  className="mx-auto max-w-full md:max-w-3xl h-auto rounded-lg shadow-md"
-                />
-              </div>
             </div>
           </div>
         </section>
@@ -181,18 +173,10 @@ const ServicesPage = () => {
                   </div>
                   <div className={index % 2 ? 'order-2 lg:order-1' : ''}>
                     <div className="bg-squad-light rounded-xl p-8 shadow-inner">
-                      <div className="aspect-video bg-white rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
-                        {index % 3 === 0 ? (
-                          <img 
-                            src="/lovable-uploads/000a65a5-0341-4063-8990-c45877a140ad.png" 
-                            alt={service.title}
-                            className="object-cover w-full h-full opacity-90 hover:opacity-100 transition-opacity"
-                          />
-                        ) : (
-                          <div className="text-4xl text-squad-primary opacity-30">
-                            {service.icon}
-                          </div>
-                        )}
+                      <div className="aspect-video bg-white rounded-lg shadow-lg flex items-center justify-center">
+                        <div className="text-4xl text-squad-primary opacity-30">
+                          {service.icon}
+                        </div>
                       </div>
                     </div>
                   </div>

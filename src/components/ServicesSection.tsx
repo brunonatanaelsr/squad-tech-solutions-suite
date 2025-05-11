@@ -76,19 +76,11 @@ const ServicesSection = () => {
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
             Soluções completas para modernizar sua empresa e impulsionar seu crescimento com tecnologia e inovação.
           </p>
-          
-          <div className="mt-10 flex justify-center">
-            <img 
-              src="/lovable-uploads/000a65a5-0341-4063-8990-c45877a140ad.png" 
-              alt="Equipe de profissionais trabalhando" 
-              className="max-w-full md:max-w-2xl h-auto rounded-lg shadow-md"
-            />
-          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-            <Card key={service.id} className="group hover:shadow-lg transition-shadow border border-gray-100 overflow-hidden">
+            <Card key={service.id} className="group hover:shadow-lg transition-shadow border border-gray-100">
               <CardHeader className="pb-2">
                 <div className="text-squad-primary mb-4">
                   {service.icon}
