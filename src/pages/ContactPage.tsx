@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -58,8 +57,10 @@ const ContactPage = () => {
                     </div>
                     <div className="ml-4">
                       <h3 className="text-lg font-semibold text-gray-900">Escritório</h3>
-                      <p className="text-gray-600">Av. Pe. José Holanda do Vale, 600</p>
-                      <p className="text-gray-600">Fortaleza - CE</p>
+                      <p className="text-gray-600">AV DOM LUIS, 300 LJ256</p>
+                      <p className="text-gray-600">ALDEOTA</p>
+                      <p className="text-gray-600">FORTALEZA - CE</p>
+                      <p className="text-gray-600">CEP: 60.160-196</p>
                     </div>
                   </div>
                 </div>

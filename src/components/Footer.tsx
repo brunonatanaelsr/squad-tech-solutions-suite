@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, Linkedin, Instagram, Facebook } from 'lucide-react';
@@ -80,6 +79,15 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contato</h4>
             <ul className="space-y-4">
+              <li className="flex items-center">
+                <span className="mr-2">AV DOM LUIS, 300 LJ256 - ALDEOTA</span>
+              </li>
+              <li className="flex items-center">
+                <span className="mr-2">CEP: 60.160-196</span>
+              </li>
+              <li className="flex items-center">
+                <span className="mr-2">FORTALEZA - CE</span>
+              </li>
               <li className="flex items-center">
                 <Phone size={16} className="mr-2" />
                 <span>(85) 9 8510-0928</span>
