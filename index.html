@@ -3,24 +3,79 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#1a365d" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Squad Soluções - Tecnologia e Consultoria</title>
     <meta name="description" content="Soluções tecnológicas inovadoras: locação de equipamentos, hospedagem, automação, desenvolvimento de software e consultoria em TI e gestão." />
     <meta name="author" content="Squad Soluções" />
+    <meta name="keywords" content="tecnologia, consultoria, TI, automação, hospedagem, desenvolvimento, software, Fortaleza" />
+    <link rel="canonical" href="https://squadsolucoes.com.br/" />
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google.com https://www.gstatic.com https://maps.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://maps.googleapis.com;" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
 
+    <!-- Open Graph -->
     <meta property="og:title" content="Squad Soluções - Tecnologia e Consultoria" />
     <meta property="og:description" content="Soluções tecnológicas inovadoras: locação de equipamentos, hospedagem, automação, desenvolvimento de software e consultoria em TI e gestão." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://squadsolucoes.com.br/" />
+    <meta property="og:image" content="https://squadsolucoes.com.br/og-image.jpg" />
+    <meta property="og:locale" content="pt_BR" />
     
-
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@squad_solucoes" />
+    <meta name="twitter:title" content="Squad Soluções - Tecnologia e Consultoria" />
+    <meta name="twitter:description" content="Soluções tecnológicas inovadoras em TI e consultoria" />
+    <meta name="twitter:image" content="https://squadsolucoes.com.br/twitter-image.jpg" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/src/index.css" as="style" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Squad Soluções",
+      "alternateName": "Squad Soluções - Tecnologia e Consultoria",
+      "url": "https://squadsolucoes.com.br",
+      "logo": "https://squadsolucoes.com.br/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+5585985100928",
+        "contactType": "customer service",
+        "availableLanguage": "Portuguese"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Dom Luis, 300",
+        "addressLocality": "Fortaleza",
+        "addressRegion": "CE",
+        "postalCode": "60160-196",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://www.instagram.com/squad_solucoes",
+        "https://www.linkedin.com/company/squad-solucoes"
+      ]
+    }
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

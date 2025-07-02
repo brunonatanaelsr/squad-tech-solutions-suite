@@ -1,0 +1,177 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0984e3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#74b9ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffeaa7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fdcb6e;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="cloudGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.2" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg6)"/>
+  
+  <!-- Network lines pattern -->
+  <g opacity="0.15">
+    <line x1="100" y1="100" x2="200" y2="150" stroke="#ffffff" stroke-width="1"/>
+    <line x1="200" y1="150" x2="300" y2="100" stroke="#ffffff" stroke-width="1"/>
+    <line x1="300" y1="100" x2="400" y2="200" stroke="#ffffff" stroke-width="1"/>
+    <line x1="400" y1="200" x2="500" y2="120" stroke="#ffffff" stroke-width="1"/>
+    <line x1="500" y1="120" x2="600" y2="180" stroke="#ffffff" stroke-width="1"/>
+    <line x1="600" y1="180" x2="700" y2="100" stroke="#ffffff" stroke-width="1"/>
+    
+    <circle cx="100" cy="100" r="3" fill="#ffffff"/>
+    <circle cx="200" cy="150" r="3" fill="#ffffff"/>
+    <circle cx="300" cy="100" r="3" fill="#ffffff"/>
+    <circle cx="400" cy="200" r="3" fill="#ffffff"/>
+    <circle cx="500" cy="120" r="3" fill="#ffffff"/>
+    <circle cx="600" cy="180" r="3" fill="#ffffff"/>
+    <circle cx="700" cy="100" r="3" fill="#ffffff"/>
+  </g>
+  
+  <!-- Main cloud -->
+  <g transform="translate(300, 150)">
+    <!-- Cloud shape -->
+    <ellipse cx="0" cy="0" rx="80" ry="50" fill="url(#cloudGlow)"/>
+    <ellipse cx="-30" cy="-15" rx="45" ry="30" fill="url(#cloudGlow)"/>
+    <ellipse cx="30" cy="-15" rx="45" ry="30" fill="url(#cloudGlow)"/>
+    <ellipse cx="0" cy="-25" rx="35" ry="25" fill="url(#cloudGlow)"/>
+    
+    <!-- Cloud data center -->
+    <rect x="-25" y="-10" width="15" height="20" rx="2" fill="url(#accent6)" opacity="0.8"/>
+    <rect x="-5" y="-10" width="15" height="20" rx="2" fill="url(#accent6)" opacity="0.9"/>
+    <rect x="15" y="-10" width="15" height="20" rx="2" fill="url(#accent6)" opacity="0.7"/>
+    
+    <!-- Server indicators -->
+    <rect x="-22" y="-7" width="9" height="3" rx="1" fill="#ffffff" opacity="0.9"/>
+    <rect x="-22" y="-2" width="9" height="3" rx="1" fill="#ffffff" opacity="0.7"/>
+    <rect x="-22" y="3" width="9" height="3" rx="1" fill="#ffffff" opacity="0.9"/>
+    
+    <rect x="-2" y="-7" width="9" height="3" rx="1" fill="#ffffff" opacity="0.8"/>
+    <rect x="-2" y="-2" width="9" height="3" rx="1" fill="#ffffff" opacity="0.9"/>
+    <rect x="-2" y="3" width="9" height="3" rx="1" fill="#ffffff" opacity="0.6"/>
+    
+    <rect x="18" y="-7" width="9" height="3" rx="1" fill="#ffffff" opacity="0.7"/>
+    <rect x="18" y="-2" width="9" height="3" rx="1" fill="#ffffff" opacity="0.8"/>
+    <rect x="18" y="3" width="9" height="3" rx="1" fill="#ffffff" opacity="0.9"/>
+    
+    <!-- Cloud label -->
+    <text x="0" y="70" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold" opacity="0.9">
+      CLOUD COMPUTING
+    </text>
+  </g>
+  
+  <!-- Local infrastructure -->
+  <g transform="translate(100, 280)">
+    <!-- On-premise servers -->
+    <rect x="0" y="0" width="40" height="60" rx="3" fill="#ffffff" opacity="0.7"/>
+    <rect x="5" y="5" width="30" height="8" rx="1" fill="url(#accent6)" opacity="0.6"/>
+    <rect x="5" y="17" width="30" height="8" rx="1" fill="url(#accent6)" opacity="0.8"/>
+    <rect x="5" y="29" width="30" height="8" rx="1" fill="url(#accent6)" opacity="0.4"/>
+    <rect x="5" y="41" width="30" height="8" rx="1" fill="url(#accent6)" opacity="0.7"/>
+    
+    <rect x="50" y="10" width="40" height="50" rx="3" fill="#ffffff" opacity="0.6"/>
+    <rect x="55" y="15" width="30" height="6" rx="1" fill="url(#accent6)" opacity="0.5"/>
+    <rect x="55" y="25" width="30" height="6" rx="1" fill="url(#accent6)" opacity="0.7"/>
+    <rect x="55" y="35" width="30" height="6" rx="1" fill="url(#accent6)" opacity="0.3"/>
+    <rect x="55" y="45" width="30" height="6" rx="1" fill="url(#accent6)" opacity="0.6"/>
+    
+    <text x="45" y="80" text-anchor="middle" fill="#ffffff" font-size="9" opacity="0.8">ON-PREMISE</text>
+  </g>
+  
+  <!-- Hybrid solution -->
+  <g transform="translate(500, 300)">
+    <!-- Hybrid representation -->
+    <rect x="0" y="0" width="30" height="40" rx="3" fill="#ffffff" opacity="0.8"/>
+    <rect x="35" y="-10" width="50" height="30" rx="15" fill="url(#cloudGlow)" opacity="0.7"/>
+    
+    <!-- Connection -->
+    <path d="M 30 20 Q 35 15 35 10" stroke="url(#accent6)" stroke-width="3" fill="none"/>
+    
+    <text x="42" y="55" text-anchor="middle" fill="#ffffff" font-size="9" opacity="0.8">HÍBRIDO</text>
+  </g>
+  
+  <!-- Benefits -->
+  <g transform="translate(500, 80)">
+    <!-- Scalability -->
+    <g>
+      <rect x="0" y="0" width="15" height="30" fill="url(#accent6)" opacity="0.6"/>
+      <rect x="20" y="-5" width="15" height="35" fill="url(#accent6)" opacity="0.8"/>
+      <rect x="40" y="-10" width="15" height="40" fill="url(#accent6)" opacity="0.9"/>
+      <text x="27" y="45" text-anchor="middle" fill="#ffffff" font-size="8">ESCALABILIDADE</text>
+    </g>
+    
+    <!-- Cost efficiency -->
+    <g transform="translate(80, 0)">
+      <circle cx="15" cy="15" r="15" fill="url(#accent6)" opacity="0.8"/>
+      <text x="15" y="18" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">$</text>
+      <text x="15" y="45" text-anchor="middle" fill="#ffffff" font-size="8">ECONOMIA</text>
+    </g>
+  </g>
+  
+  <!-- Service types -->
+  <g transform="translate(50, 80)">
+    <!-- IaaS -->
+    <rect x="0" y="0" width="50" height="25" rx="3" fill="#ffffff" opacity="0.8"/>
+    <text x="25" y="15" text-anchor="middle" fill="url(#bg6)" font-size="10" font-weight="bold">IaaS</text>
+    <text x="25" y="40" text-anchor="middle" fill="#ffffff" font-size="7">Infraestrutura</text>
+    
+    <!-- PaaS -->
+    <rect x="60" y="0" width="50" height="25" rx="3" fill="url(#accent6)" opacity="0.8"/>
+    <text x="85" y="15" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">PaaS</text>
+    <text x="85" y="40" text-anchor="middle" fill="#ffffff" font-size="7">Plataforma</text>
+    
+    <!-- SaaS -->
+    <rect x="120" y="0" width="50" height="25" rx="3" fill="#ffffff" opacity="0.9"/>
+    <text x="145" y="15" text-anchor="middle" fill="url(#bg6)" font-size="10" font-weight="bold">SaaS</text>
+    <text x="145" y="40" text-anchor="middle" fill="#ffffff" font-size="7">Software</text>
+  </g>
+  
+  <!-- Security features -->
+  <g transform="translate(600, 250)">
+    <!-- Security shield -->
+    <path d="M 0 15 L 0 -15 Q 0 -20 8 -20 L 22 -20 Q 30 -20 30 -15 L 30 15 Q 30 25 15 30 Q 0 25 0 15 Z" 
+          fill="#ffffff" opacity="0.8"/>
+    <path d="M 8 0 L 12 5 L 22 -5" stroke="url(#accent6)" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="15" y="45" text-anchor="middle" fill="#ffffff" font-size="8">SEGURANÇA</text>
+  </g>
+  
+  <!-- Data flow -->
+  <g transform="translate(200, 200)">
+    <!-- Upload arrow -->
+    <path d="M 0 20 L 20 0 L 40 20" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.7"/>
+    <polygon points="15,5 25,5 20,-5" fill="#ffffff" opacity="0.7"/>
+    
+    <!-- Download arrow -->
+    <path d="M 0 40 L 20 60 L 40 40" stroke="url(#accent6)" stroke-width="3" fill="none" opacity="0.8"/>
+    <polygon points="15,55 25,55 20,65" fill="url(#accent6)" opacity="0.8"/>
+    
+    <text x="20" y="80" text-anchor="middle" fill="#ffffff" font-size="8">SINCRONIZAÇÃO</text>
+  </g>
+  
+  <!-- Connection lines -->
+  <path d="M 200 300 Q 250 250 300 200" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 380 180 Q 430 220 500 280" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 380 150 Q 450 120 500 120" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <!-- Performance indicators -->
+  <g transform="translate(650, 150)">
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.8"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="url(#accent6)" stroke-width="3" opacity="0.9" 
+            stroke-dasharray="75 25" transform="rotate(-90)"/>
+    <text x="0" y="3" text-anchor="middle" fill="#ffffff" font-size="8" font-weight="bold">99%</text>
+    <text x="0" y="35" text-anchor="middle" fill="#ffffff" font-size="7">UPTIME</text>
+  </g>
+  
+  <!-- Floating elements -->
+  <circle cx="150" cy="50" r="2" fill="#ffffff" opacity="0.6"/>
+  <circle cx="700" cy="350" r="3" fill="url(#accent6)" opacity="0.7"/>
+  <circle cx="50" cy="200" r="4" fill="#ffffff" opacity="0.5"/>
+  <circle cx="750" cy="50" r="2" fill="url(#accent6)" opacity="0.8"/>
+</svg>

@@ -8,17 +8,21 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
+// Import das imagens SVG para serviços
+import locacaoEquipamentosImg from '@/assets/images/locacao-equipamentos.svg';
+import desenvolvimentoSoftwareImg from '@/assets/images/desenvolvimento-software.svg';
+import hospedagemNuvemImg from '@/assets/images/hospedagem-nuvem.svg';
+import automacaoImg from '@/assets/images/automacao.svg';
+import consultoriaGestaoImg from '@/assets/images/consultoria-gestao.svg';
+import consultoriaTiImg from '@/assets/images/consultoria-ti.svg';
+
 const ServicesPage = () => {
   const services = [
     {
       id: 'locacao',
       title: 'Locação de Equipamentos',
       description: 'Disponibilizamos notebooks, desktops, servidores, impressoras e infraestrutura completa para seu negócio, com suporte técnico especializado.',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
-        </svg>
-      ),
+      image: locacaoEquipamentosImg,
       features: [
         'Equipamentos de última geração',
         'Contratos flexíveis de 12 a 48 meses',
@@ -32,11 +36,7 @@ const ServicesPage = () => {
       id: 'software',
       title: 'Desenvolvimento de Software',
       description: 'Criamos sistemas sob encomenda, aplicativos, ERPs, plataformas SaaS, websites e soluções digitais personalizadas para suas necessidades específicas.',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-        </svg>
-      ),
+      image: desenvolvimentoSoftwareImg,
       features: [
         'Desenvolvimento ágil e eficiente',
         'Interfaces intuitivas e responsivas',
@@ -50,11 +50,7 @@ const ServicesPage = () => {
       id: 'hospedagem',
       title: 'Hospedagem e Nuvem',
       description: 'Oferecemos servidores, bancos de dados, soluções IaaS, PaaS, SaaS e infraestrutura em nuvem segura, escalável e de alta disponibilidade.',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
-        </svg>
-      ),
+      image: hospedagemNuvemImg,
       features: [
         'Servidores dedicados e compartilhados',
         'Ambiente cloud em data centers certificados',
@@ -68,11 +64,7 @@ const ServicesPage = () => {
       id: 'automacao',
       title: 'Automação',
       description: 'Implementamos soluções para automação de processos internos, integrações entre sistemas e dispositivos IoT que aumentam a eficiência operacional.',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
-          <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
-        </svg>
-      ),
+      image: automacaoImg,
       features: [
         'Automação de processos repetitivos',
         'Integração entre sistemas',
@@ -86,11 +78,7 @@ const ServicesPage = () => {
       id: 'consultoria-gestao',
       title: 'Consultoria em Gestão Empresarial',
       description: 'Auxiliamos com estratégia, otimização de processos, inovação e eficiência para potencializar o crescimento sustentável do seu negócio.',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
-        </svg>
-      ),
+      image: consultoriaGestaoImg,
       features: [
         'Diagnóstico empresarial completo',
         'Mapeamento e otimização de processos',
@@ -104,11 +92,7 @@ const ServicesPage = () => {
       id: 'consultoria-ti',
       title: 'Consultoria em TI',
       description: 'Orientamos sua transformação digital, segurança da informação, estrutura tecnológica e suporte para maximizar o valor da TI no seu negócio.',
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
-        </svg>
-      ),
+      image: consultoriaTiImg,
       features: [
         'Avaliação de infraestrutura tecnológica',
         'Implementação de governança de TI',
@@ -147,9 +131,6 @@ const ServicesPage = () => {
               >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                   <div className={index % 2 ? 'order-1 lg:order-2' : ''}>
-                    <div className="text-squad-primary mb-6">
-                      {service.icon}
-                    </div>
                     <h2 className="text-3xl font-bold text-gray-900 mb-6">{service.title}</h2>
                     <p className="text-lg text-gray-700 mb-6">
                       {service.description}
@@ -172,11 +153,13 @@ const ServicesPage = () => {
                     </Button>
                   </div>
                   <div className={index % 2 ? 'order-2 lg:order-1' : ''}>
-                    <div className="bg-squad-light rounded-xl p-8 shadow-inner">
-                      <div className="aspect-video bg-white rounded-lg shadow-lg flex items-center justify-center">
-                        <div className="text-4xl text-squad-primary opacity-30">
-                          {service.icon}
-                        </div>
+                    <div className="bg-squad-light rounded-xl p-4 shadow-inner">
+                      <div className="aspect-video bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img 
+                          src={service.image} 
+                          alt={service.title} 
+                          className="w-full h-full object-contain p-4" 
+                        />
                       </div>
                     </div>
                   </div>

@@ -54,22 +54,32 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit} className="space-y-6" noValidate>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">Nome completo *</label>
+          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+            Nome completo *
+          </label>
           <Input
             id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
             required
+            autoComplete="name"
             placeholder="Digite seu nome"
             className="w-full"
+            aria-required="true"
+            aria-describedby="name-help"
           />
+          <span id="name-help" className="sr-only">
+            Campo obrigatório para identificação
+          </span>
         </div>
         <div className="space-y-2">
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">E-mail *</label>
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            E-mail *
+          </label>
           <Input
             id="email"
             name="email"
@@ -77,43 +87,67 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
+            autoComplete="email"
             placeholder="Digite seu e-mail"
             className="w-full"
+            aria-required="true"
+            aria-describedby="email-help"
           />
+          <span id="email-help" className="sr-only">
+            Campo obrigatório para contato por e-mail
+          </span>
         </div>
         <div className="space-y-2">
-          <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Telefone *</label>
+          <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+            Telefone *
+          </label>
           <Input
             id="phone"
             name="phone"
+            type="tel"
             value={formData.phone}
             onChange={handleChange}
             required
-            placeholder="(00) 00000-0000"
+            autoComplete="tel"
+            placeholder="(85) 90000-0000"
             className="w-full"
+            aria-required="true"
+            aria-describedby="phone-help"
           />
+          <span id="phone-help" className="sr-only">
+            Campo obrigatório para contato telefônico
+          </span>
         </div>
         <div className="space-y-2">
-          <label htmlFor="company" className="block text-sm font-medium text-gray-700">Empresa</label>
+          <label htmlFor="company" className="block text-sm font-medium text-gray-700">
+            Empresa
+          </label>
           <Input
             id="company"
             name="company"
             value={formData.company}
             onChange={handleChange}
+            autoComplete="organization"
             placeholder="Nome da sua empresa"
             className="w-full"
+            aria-describedby="company-help"
           />
+          <span id="company-help" className="sr-only">
+            Campo opcional para informar sua empresa
+          </span>
         </div>
       </div>
       
       <div className="space-y-2">
-        <label htmlFor="interest" className="block text-sm font-medium text-gray-700">Interesse *</label>
+        <label htmlFor="interest" className="block text-sm font-medium text-gray-700">
+          Interesse *
+        </label>
         <Select 
           value={formData.interest} 
           onValueChange={handleSelectChange}
           required
         >
-          <SelectTrigger className="w-full">
+          <SelectTrigger className="w-full" aria-required="true" aria-describedby="interest-help">
             <SelectValue placeholder="Selecione um serviço" />
           </SelectTrigger>
           <SelectContent>
@@ -126,28 +160,50 @@ const ContactForm = () => {
             <SelectItem value="outro">Outro</SelectItem>
           </SelectContent>
         </Select>
+        <span id="interest-help" className="sr-only">
+          Campo obrigatório para identificar seu interesse
+        </span>
       </div>
       
       <div className="space-y-2">
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700">Mensagem *</label>
+        <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+          Mensagem *
+        </label>
         <Textarea
           id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
           required
-          placeholder="Descreva como podemos ajudar"
+          placeholder="Descreva como podemos ajudar você"
           className="w-full min-h-[120px]"
+          aria-required="true"
+          aria-describedby="message-help"
+          maxLength={1000}
         />
+        <span id="message-help" className="text-xs text-gray-500">
+          Campo obrigatório. Máximo 1000 caracteres.
+        </span>
       </div>
       
       <Button 
         type="submit" 
-        className="w-full bg-squad-primary hover:bg-squad-dark"
+        className="w-full bg-squad-primary hover:bg-squad-dark focus:ring-2 focus:ring-squad-primary focus:ring-offset-2"
         disabled={isSubmitting}
+        aria-describedby="submit-help"
       >
-        {isSubmitting ? 'Enviando...' : 'Enviar mensagem'}
+        {isSubmitting ? (
+          <>
+            <span className="animate-spin mr-2">⏳</span>
+            Enviando...
+          </>
+        ) : (
+          'Enviar mensagem'
+        )}
       </Button>
+      <span id="submit-help" className="sr-only">
+        Clique para enviar o formulário de contato
+      </span>
     </form>
   );
 };

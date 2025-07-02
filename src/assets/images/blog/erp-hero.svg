@@ -1,0 +1,186 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e84393;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fd79a8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#74b9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0984e3;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg5)"/>
+  
+  <!-- Grid overlay -->
+  <defs>
+    <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="400" fill="url(#smallGrid)"/>
+  
+  <!-- ERP System Dashboard -->
+  <g transform="translate(150, 100)">
+    <!-- Main screen -->
+    <rect x="0" y="0" width="200" height="120" rx="8" fill="#ffffff" opacity="0.95" filter="url(#glow3)"/>
+    <rect x="5" y="5" width="190" height="110" rx="5" fill="#f8f9fa"/>
+    
+    <!-- Header -->
+    <rect x="10" y="10" width="180" height="20" rx="3" fill="url(#accent5)" opacity="0.9"/>
+    <text x="100" y="23" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">ERP DASHBOARD</text>
+    
+    <!-- Menu items -->
+    <rect x="10" y="35" width="40" height="15" rx="2" fill="url(#accent5)" opacity="0.7"/>
+    <text x="30" y="44" text-anchor="middle" fill="#ffffff" font-size="7">VENDAS</text>
+    
+    <rect x="55" y="35" width="40" height="15" rx="2" fill="url(#accent5)" opacity="0.5"/>
+    <text x="75" y="44" text-anchor="middle" fill="#ffffff" font-size="7">ESTOQUE</text>
+    
+    <rect x="100" y="35" width="40" height="15" rx="2" fill="url(#accent5)" opacity="0.7"/>
+    <text x="120" y="44" text-anchor="middle" fill="#ffffff" font-size="7">FISCAL</text>
+    
+    <rect x="145" y="35" width="40" height="15" rx="2" fill="url(#accent5)" opacity="0.6"/>
+    <text x="165" y="44" text-anchor="middle" fill="#ffffff" font-size="7">RH</text>
+    
+    <!-- Content area -->
+    <rect x="10" y="55" width="85" height="55" rx="3" fill="#ffffff" stroke="url(#accent5)" stroke-width="1" opacity="0.8"/>
+    
+    <!-- Charts in content -->
+    <rect x="15" y="70" width="6" height="25" fill="url(#accent5)" opacity="0.8"/>
+    <rect x="25" y="75" width="6" height="20" fill="url(#accent5)" opacity="0.6"/>
+    <rect x="35" y="65" width="6" height="30" fill="url(#accent5)" opacity="0.9"/>
+    <rect x="45" y="80" width="6" height="15" fill="url(#accent5)" opacity="0.7"/>
+    <rect x="55" y="70" width="6" height="25" fill="url(#accent5)" opacity="0.8"/>
+    <rect x="65" y="78" width="6" height="17" fill="url(#accent5)" opacity="0.5"/>
+    <rect x="75" y="68" width="6" height="27" fill="url(#accent5)" opacity="0.9"/>
+    <rect x="85" y="73" width="6" height="22" fill="url(#accent5)" opacity="0.7"/>
+    
+    <!-- Side panel -->
+    <rect x="100" y="55" width="85" height="55" rx="3" fill="#ffffff" stroke="url(#accent5)" stroke-width="1" opacity="0.8"/>
+    
+    <!-- Side panel content -->
+    <rect x="105" y="60" width="75" height="4" rx="1" fill="url(#accent5)" opacity="0.7"/>
+    <rect x="105" y="67" width="60" height="4" rx="1" fill="url(#accent5)" opacity="0.5"/>
+    <rect x="105" y="74" width="70" height="4" rx="1" fill="url(#accent5)" opacity="0.8"/>
+    <rect x="105" y="81" width="55" height="4" rx="1" fill="url(#accent5)" opacity="0.6"/>
+    <rect x="105" y="88" width="75" height="4" rx="1" fill="url(#accent5)" opacity="0.9"/>
+    <rect x="105" y="95" width="65" height="4" rx="1" fill="url(#accent5)" opacity="0.4"/>
+    <rect x="105" y="102" width="70" height="4" rx="1" fill="url(#accent5)" opacity="0.7"/>
+  </g>
+  
+  <!-- Integration modules -->
+  <g transform="translate(400, 80)">
+    <!-- Finance module -->
+    <rect x="0" y="0" width="60" height="40" rx="5" fill="#ffffff" opacity="0.9"/>
+    <rect x="5" y="5" width="50" height="8" rx="2" fill="url(#accent5)" opacity="0.8"/>
+    <text x="30" y="20" text-anchor="middle" fill="url(#accent5)" font-size="8" font-weight="bold">FINANÇAS</text>
+    <circle cx="50" cy="32" r="3" fill="#27ae60"/>
+    
+    <!-- HR module -->
+    <rect x="70" y="0" width="60" height="40" rx="5" fill="#ffffff" opacity="0.9"/>
+    <rect x="75" y="5" width="50" height="8" rx="2" fill="url(#accent5)" opacity="0.8"/>
+    <text x="100" y="20" text-anchor="middle" fill="url(#accent5)" font-size="8" font-weight="bold">RH</text>
+    <circle cx="120" cy="32" r="3" fill="#27ae60"/>
+    
+    <!-- Inventory module -->
+    <rect x="35" y="50" width="60" height="40" rx="5" fill="#ffffff" opacity="0.9"/>
+    <rect x="40" y="55" width="50" height="8" rx="2" fill="url(#accent5)" opacity="0.8"/>
+    <text x="65" y="70" text-anchor="middle" fill="url(#accent5)" font-size="8" font-weight="bold">ESTOQUE</text>
+    <circle cx="85" cy="82" r="3" fill="#27ae60"/>
+  </g>
+  
+  <!-- Decision tree -->
+  <g transform="translate(100, 250)">
+    <rect x="0" y="0" width="120" height="60" rx="30" fill="#ffffff" opacity="0.2"/>
+    <text x="60" y="35" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">
+      CRITÉRIOS DE ESCOLHA
+    </text>
+    
+    <!-- Decision factors -->
+    <circle cx="20" cy="80" r="8" fill="#ffffff" opacity="0.8"/>
+    <text x="20" y="95" text-anchor="middle" fill="#ffffff" font-size="7">TAMANHO</text>
+    
+    <circle cx="60" cy="80" r="8" fill="#ffffff" opacity="0.8"/>
+    <text x="60" y="95" text-anchor="middle" fill="#ffffff" font-size="7">CUSTO</text>
+    
+    <circle cx="100" cy="80" r="8" fill="#ffffff" opacity="0.8"/>
+    <text x="100" y="95" text-anchor="middle" fill="#ffffff" font-size="7">FEATURES</text>
+    
+    <!-- Connecting lines -->
+    <line x1="40" y1="60" x2="20" y2="72" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+    <line x1="60" y1="60" x2="60" y2="72" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+    <line x1="80" y1="60" x2="100" y2="72" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+  </g>
+  
+  <!-- Company sizes -->
+  <g transform="translate(500, 200)">
+    <!-- Small company -->
+    <rect x="0" y="0" width="30" height="30" rx="3" fill="#ffffff" opacity="0.7"/>
+    <rect x="5" y="5" width="20" height="20" rx="2" fill="url(#accent5)" opacity="0.6"/>
+    <text x="15" y="45" text-anchor="middle" fill="#ffffff" font-size="8">PEQUENO</text>
+    
+    <!-- Medium company -->
+    <rect x="40" y="-5" width="40" height="40" rx="4" fill="#ffffff" opacity="0.8"/>
+    <rect x="45" y="0" width="30" height="30" rx="3" fill="url(#accent5)" opacity="0.7"/>
+    <text x="60" y="50" text-anchor="middle" fill="#ffffff" font-size="8">MÉDIO</text>
+    
+    <!-- Large company -->
+    <rect x="90" y="-10" width="50" height="50" rx="5" fill="#ffffff" opacity="0.9"/>
+    <rect x="95" y="-5" width="40" height="40" rx="4" fill="url(#accent5)" opacity="0.8"/>
+    <text x="115" y="55" text-anchor="middle" fill="#ffffff" font-size="8">GRANDE</text>
+  </g>
+  
+  <!-- Features comparison -->
+  <g transform="translate(600, 100)">
+    <rect x="0" y="0" width="80" height="100" rx="5" fill="#ffffff" opacity="0.3"/>
+    <text x="40" y="15" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="bold">FUNCIONALIDADES</text>
+    
+    <!-- Feature list -->
+    <circle cx="10" cy="25" r="2" fill="#27ae60"/>
+    <text x="18" y="28" fill="#ffffff" font-size="7">Contabilidade</text>
+    
+    <circle cx="10" cy="35" r="2" fill="#27ae60"/>
+    <text x="18" y="38" fill="#ffffff" font-size="7">Vendas</text>
+    
+    <circle cx="10" cy="45" r="2" fill="#27ae60"/>
+    <text x="18" y="48" fill="#ffffff" font-size="7">Compras</text>
+    
+    <circle cx="10" cy="55" r="2" fill="#27ae60"/>
+    <text x="18" y="58" fill="#ffffff" font-size="7">Estoque</text>
+    
+    <circle cx="10" cy="65" r="2" fill="#27ae60"/>
+    <text x="18" y="68" fill="#ffffff" font-size="7">RH</text>
+    
+    <circle cx="10" cy="75" r="2" fill="#27ae60"/>
+    <text x="18" y="78" fill="#ffffff" font-size="7">Relatórios</text>
+    
+    <circle cx="10" cy="85" r="2" fill="#27ae60"/>
+    <text x="18" y="88" fill="#ffffff" font-size="7">Integração</text>
+  </g>
+  
+  <!-- Connection lines -->
+  <path d="M 350 160 Q 380 150 400 150" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M 480 120 Q 500 160 520 200" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M 220 250 Q 300 230 400 240" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.5"/>
+  
+  <!-- Success indicator -->
+  <g transform="translate(650, 300)">
+    <circle cx="0" cy="0" r="25" fill="#27ae60" opacity="0.8" filter="url(#glow3)"/>
+    <path d="M -10 0 L -5 8 L 12 -8" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <text x="0" y="40" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="bold">SUCESSO</text>
+  </g>
+  
+  <!-- Floating elements -->
+  <circle cx="80" cy="50" r="3" fill="#ffffff" opacity="0.6"/>
+  <circle cx="750" cy="80" r="4" fill="url(#accent5)" opacity="0.7"/>
+  <circle cx="50" cy="380" r="2" fill="#ffffff" opacity="0.5"/>
+</svg>

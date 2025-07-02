@@ -1,0 +1,103 @@
+<svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="150" fill="url(#bgGrad2)" rx="8"/>
+  
+  <!-- Main code editor window -->
+  <g transform="translate(20, 15)">
+    <!-- Window frame -->
+    <rect x="0" y="0" width="160" height="120" fill="url(#codeGrad)" rx="4"/>
+    
+    <!-- Title bar -->
+    <rect x="0" y="0" width="160" height="20" fill="#374151" rx="4"/>
+    <rect x="0" y="16" width="160" height="4" fill="#374151"/>
+    
+    <!-- Traffic lights -->
+    <circle cx="8" cy="10" r="3" fill="#ef4444"/>
+    <circle cx="18" cy="10" r="3" fill="#f59e0b"/>
+    <circle cx="28" cy="10" r="3" fill="#10b981"/>
+    
+    <!-- File tab -->
+    <rect x="40" y="4" width="50" height="12" fill="#4b5563" rx="2"/>
+    <text x="45" y="12" font-family="monospace" font-size="6" fill="#e5e7eb">main.tsx</text>
+    
+    <!-- Code content -->
+    <g transform="translate(8, 28)">
+      <!-- Line numbers -->
+      <rect x="0" y="0" width="20" height="84" fill="#2d3748"/>
+      <text x="15" y="10" font-family="monospace" font-size="5" fill="#64748b" text-anchor="end">1</text>
+      <text x="15" y="20" font-family="monospace" font-size="5" fill="#64748b" text-anchor="end">2</text>
+      <text x="15" y="30" font-family="monospace" font-size="5" fill="#64748b" text-anchor="end">3</text>
+      <text x="15" y="40" font-family="monospace" font-size="5" fill="#64748b" text-anchor="end">4</text>
+      <text x="15" y="50" font-family="monospace" font-size="5" fill="#64748b" text-anchor="end">5</text>
+      <text x="15" y="60" font-family="monospace" font-size="5" fill="#64748b" text-anchor="end">6</text>
+      <text x="15" y="70" font-family="monospace" font-size="5" fill="#64748b" text-anchor="end">7</text>
+      <text x="15" y="80" font-family="monospace" font-size="5" fill="#64748b" text-anchor="end">8</text>
+      
+      <!-- Code lines -->
+      <text x="25" y="10" font-family="monospace" font-size="5" fill="#7c3aed">import</text>
+      <text x="45" y="10" font-family="monospace" font-size="5" fill="#e5e7eb">React</text>
+      <text x="60" y="10" font-family="monospace" font-size="5" fill="#7c3aed">from</text>
+      <text x="75" y="10" font-family="monospace" font-size="5" fill="#10b981">'react'</text>
+      
+      <text x="25" y="20" font-family="monospace" font-size="5" fill="#7c3aed">import</text>
+      <text x="45" y="20" font-family="monospace" font-size="5" fill="#e5e7eb">{ useState }</text>
+      
+      <text x="25" y="30" font-family="monospace" font-size="5" fill="#7c3aed">const</text>
+      <text x="45" y="30" font-family="monospace" font-size="5" fill="#fbbf24">App</text>
+      <text x="60" y="30" font-family="monospace" font-size="5" fill="#e5e7eb">=</text>
+      <text x="70" y="30" font-family="monospace" font-size="5" fill="#e5e7eb">()</text>
+      <text x="80" y="30" font-family="monospace" font-size="5" fill="#7c3aed">=></text>
+      <text x="95" y="30" font-family="monospace" font-size="5" fill="#e5e7eb">{</text>
+      
+      <text x="30" y="40" font-family="monospace" font-size="5" fill="#7c3aed">const</text>
+      <text x="50" y="40" font-family="monospace" font-size="5" fill="#e5e7eb">[data,</text>
+      <text x="75" y="40" font-family="monospace" font-size="5" fill="#e5e7eb">setData]</text>
+      
+      <text x="30" y="50" font-family="monospace" font-size="5" fill="#7c3aed">return</text>
+      <text x="55" y="50" font-family="monospace" font-size="5" fill="#e5e7eb">(</text>
+      
+      <text x="35" y="60" font-family="monospace" font-size="5" fill="#e5e7eb">&lt;</text>
+      <text x="40" y="60" font-family="monospace" font-size="5" fill="#f87171">div</text>
+      <text x="55" y="60" font-family="monospace" font-size="5" fill="#34d399">className</text>
+      <text x="80" y="60" font-family="monospace" font-size="5" fill="#e5e7eb">=</text>
+      <text x="85" y="60" font-family="monospace" font-size="5" fill="#10b981">"app"</text>
+      <text x="105" y="60" font-family="monospace" font-size="5" fill="#e5e7eb">&gt;</text>
+      
+      <text x="40" y="70" font-family="monospace" font-size="5" fill="#64748b">// Component logic</text>
+      
+      <text x="35" y="80" font-family="monospace" font-size="5" fill="#e5e7eb">&lt;/</text>
+      <text x="45" y="80" font-family="monospace" font-size="5" fill="#f87171">div</text>
+      <text x="60" y="80" font-family="monospace" font-size="5" fill="#e5e7eb">&gt;</text>
+    </g>
+  </g>
+  
+  <!-- Floating code brackets -->
+  <g transform="translate(15, 5)">
+    <text font-family="monospace" font-size="24" fill="url(#accentGrad)" opacity="0.3">{</text>
+  </g>
+  <g transform="translate(170, 25)">
+    <text font-family="monospace" font-size="20" fill="url(#accentGrad)" opacity="0.3">}</text>
+  </g>
+  <g transform="translate(10, 130)">
+    <text font-family="monospace" font-size="16" fill="url(#accentGrad)" opacity="0.3">&lt;/&gt;</text>
+  </g>
+  
+  <!-- Cursor -->
+  <rect x="68" y="68" width="1" height="8" fill="#3b82f6"/>
+</svg>

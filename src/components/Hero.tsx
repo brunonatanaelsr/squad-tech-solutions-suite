@@ -35,7 +35,7 @@ const Hero = () => {
             
             <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4">
               <div className="bg-white p-4 rounded-lg shadow-md text-center">
-                <div className="text-squad-primary font-bold text-xl mb-1">7+</div>
+                <div className="text-squad-primary font-bold text-xl mb-1">9+</div>
                 <div className="text-gray-600 text-sm">Anos no mercado</div>
               </div>
               <div className="bg-white p-4 rounded-lg shadow-md text-center">
@@ -84,7 +84,7 @@ const Hero = () => {
               </div>
               
               <div className="absolute top-1/2 right-0 transform translate-x-1/4 -translate-y-1/2 bg-squad-primary text-white p-4 rounded-xl shadow-lg">
-                <div className="text-lg font-bold">7+ anos</div>
+                <div className="text-lg font-bold">9+ anos</div>
                 <div className="text-sm">de experiência</div>
               </div>
               <div className="absolute bottom-0 left-0 transform -translate-x-1/4 translate-y-1/4 bg-squad-secondary text-white p-3 rounded-lg shadow-lg">

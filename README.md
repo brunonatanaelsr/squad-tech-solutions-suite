@@ -1,10 +1,13 @@
 
+# Squad Soluções - Tecnologia e Consultoria
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Este é o site da Squad Soluções, uma empresa de tecnologia e consultoria.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Desenvolvimento Local
 
-Follow these steps:
+O único requisito é ter Node.js & npm instalado - [instalar com nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Siga estes passos:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.

@@ -4,66 +4,50 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+// Import das imagens SVG
+import locacaoImg from '@/assets/images/locacao-equipamentos.svg';
+import softwareImg from '@/assets/images/desenvolvimento-software.svg';
+import hospedagemImg from '@/assets/images/hospedagem-nuvem.svg';
+import automacaoImg from '@/assets/images/automacao.svg';
+import consultoriaGestaoImg from '@/assets/images/consultoria-gestao.svg';
+import consultoriaTiImg from '@/assets/images/consultoria-ti.svg';
+
 const services = [
   {
     id: 'locacao',
     title: 'Locação de Equipamentos',
     description: 'Notebooks, desktops, servidores, impressoras e infraestrutura para seu negócio, com suporte técnico.',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
-      </svg>
-    ),
+    image: locacaoImg,
   },
   {
     id: 'software',
     title: 'Desenvolvimento de Software',
     description: 'Sistemas sob encomenda, apps, ERP, SaaS, sites e plataformas personalizadas para suas necessidades.',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-      </svg>
-    ),
+    image: softwareImg,
   },
   {
     id: 'hospedagem',
     title: 'Hospedagem e Nuvem',
     description: 'Servidores, bancos de dados, soluções IaaS, PaaS, SaaS e infraestrutura segura e escalável.',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
-      </svg>
-    ),
+    image: hospedagemImg,
   },
   {
     id: 'automacao',
     title: 'Automação',
     description: 'Soluções para processos internos, integrações e IoT que aumentam a eficiência operacional.',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
-        <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
-      </svg>
-    ),
+    image: automacaoImg,
   },
   {
     id: 'consultoria-gestao',
     title: 'Consultoria em Gestão',
     description: 'Estratégia, processos, inovação e eficiência para potencializar o crescimento do seu negócio.',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
-      </svg>
-    ),
+    image: consultoriaGestaoImg,
   },
   {
     id: 'consultoria-ti',
     title: 'Consultoria em TI',
     description: 'Transformação digital, segurança, estrutura tecnológica e suporte para sua empresa.',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
-      </svg>
-    ),
+    image: consultoriaTiImg,
   }
 ];
 
@@ -82,8 +66,12 @@ const ServicesSection = () => {
           {services.map((service) => (
             <Card key={service.id} className="group hover:shadow-lg transition-shadow border border-gray-100">
               <CardHeader className="pb-2">
-                <div className="text-squad-primary mb-4">
-                  {service.icon}
+                <div className="h-24 mb-4 bg-squad-light/30 rounded-lg flex items-center justify-center p-4">
+                  <img 
+                    src={service.image} 
+                    alt={`Ilustração de ${service.title}`} 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <CardTitle>{service.title}</CardTitle>
               </CardHeader>

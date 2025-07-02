@@ -7,6 +7,14 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
+// Import das imagens SVG para blog
+import automationHero from '@/assets/images/blog/automation-hero.svg';
+import securityHero from '@/assets/images/blog/security-hero.svg';
+import digitalTransformationHero from '@/assets/images/blog/digital-transformation-hero.svg';
+import rentalHero from '@/assets/images/blog/rental-hero.svg';
+import erpHero from '@/assets/images/blog/erp-hero.svg';
+import cloudHero from '@/assets/images/blog/cloud-hero.svg';
+
 const BlogPage = () => {
   const blogPosts = [
     {
@@ -15,7 +23,7 @@ const BlogPage = () => {
       excerpt: 'Descubra como implementar soluções de automação que podem reduzir significativamente os custos operacionais da sua empresa.',
       date: '10 de maio, 2025',
       category: 'Automação',
-      image: <div className="bg-squad-gray h-48 rounded-t-lg"></div>
+      image: <img src={automationHero} alt="Automação" className="w-full h-48 object-cover rounded-t-lg" />
     },
     {
       id: 2,
@@ -23,7 +31,7 @@ const BlogPage = () => {
       excerpt: 'Proteja informações sensíveis da sua empresa com estas estratégias essenciais de segurança de dados para pequenas e médias empresas.',
       date: '28 de abril, 2025',
       category: 'Segurança',
-      image: <div className="bg-squad-gray h-48 rounded-t-lg"></div>
+      image: <img src={securityHero} alt="Segurança" className="w-full h-48 object-cover rounded-t-lg" />
     },
     {
       id: 3,
@@ -31,7 +39,7 @@ const BlogPage = () => {
       excerpt: 'Um guia passo a passo para iniciar a jornada de transformação digital na sua empresa, mesmo com recursos limitados.',
       date: '15 de abril, 2025',
       category: 'Transformação Digital',
-      image: <div className="bg-squad-gray h-48 rounded-t-lg"></div>
+      image: <img src={digitalTransformationHero} alt="Transformação Digital" className="w-full h-48 object-cover rounded-t-lg" />
     },
     {
       id: 4,
@@ -39,7 +47,7 @@ const BlogPage = () => {
       excerpt: 'Uma análise detalhada dos prós e contras entre alugar ou comprar equipamentos de TI para o seu negócio.',
       date: '3 de abril, 2025',
       category: 'Locação',
-      image: <div className="bg-squad-gray h-48 rounded-t-lg"></div>
+      image: <img src={rentalHero} alt="Locação" className="w-full h-48 object-cover rounded-t-lg" />
     },
     {
       id: 5,
@@ -47,7 +55,7 @@ const BlogPage = () => {
       excerpt: 'Critérios essenciais para avaliar e selecionar a solução de ERP mais adequada às necessidades do seu negócio.',
       date: '25 de março, 2025',
       category: 'Software',
-      image: <div className="bg-squad-gray h-48 rounded-t-lg"></div>
+      image: <img src={erpHero} alt="Software ERP" className="w-full h-48 object-cover rounded-t-lg" />
     },
     {
       id: 6,
@@ -55,7 +63,7 @@ const BlogPage = () => {
       excerpt: 'Entenda de forma simplificada os principais conceitos de computação em nuvem e como aplicá-los no seu negócio.',
       date: '12 de março, 2025',
       category: 'Cloud',
-      image: <div className="bg-squad-gray h-48 rounded-t-lg"></div>
+      image: <img src={cloudHero} alt="Cloud Computing" className="w-full h-48 object-cover rounded-t-lg" />
     }
   ];
 

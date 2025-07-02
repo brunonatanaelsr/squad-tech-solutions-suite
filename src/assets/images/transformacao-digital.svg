@@ -1,0 +1,200 @@
+<svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="digitalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="transformGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="150" fill="url(#bgGrad9)" rx="8"/>
+  <!-- Traditional business (left side) -->
+  <g transform="translate(15, 30)">
+    <!-- Old building -->
+    <rect x="0" y="20" width="50" height="40" fill="#64748b" rx="2"/>
+    <rect x="5" y="25" width="40" height="35" fill="#475569" rx="1"/>
+    
+    <!-- Windows -->
+    <rect x="10" y="30" width="6" height="8" fill="#1e293b"/>
+    <rect x="20" y="30" width="6" height="8" fill="#1e293b"/>
+    <rect x="30" y="30" width="6" height="8" fill="#1e293b"/>
+    <rect x="10" y="42" width="6" height="8" fill="#1e293b"/>
+    <rect x="20" y="42" width="6" height="8" fill="#1e293b"/>
+    <rect x="30" y="42" width="6" height="8" fill="#1e293b"/>
+    
+    <!-- Door -->
+    <rect x="22" y="52" width="6" height="8" fill="#1e293b"/>
+    
+    <!-- Roof -->
+    <path d="M 0 20 L 25 5 L 50 20 Z" fill="#374151"/>
+    
+    <!-- Paper documents -->
+    <rect x="0" y="65" width="50" height="15" fill="#e5e7eb" rx="1"/>
+    <rect x="5" y="70" width="40" height="2" fill="#64748b"/>
+    <rect x="5" y="73" width="35" height="1.5" fill="#94a3b8"/>
+    <rect x="5" y="76" width="30" height="1.5" fill="#94a3b8"/>
+  </g>
+  
+  <!-- Transformation arrow -->
+  <g transform="translate(80, 60)">
+    <!-- Arrow body -->
+    <rect x="0" y="5" width="40" height="6" fill="url(#digitalGrad)" rx="3"/>
+    
+    <!-- Arrow head -->
+    <path d="M 40 0 L 55 8 L 40 16 Z" fill="url(#digitalGrad)"/>
+    
+    <!-- Digital particles -->
+    <circle cx="10" cy="2" r="1" fill="url(#transformGrad)" opacity="0.6"/>
+    <circle cx="20" cy="1" r="1.5" fill="url(#transformGrad)" opacity="0.8"/>
+    <circle cx="30" cy="3" r="1" fill="url(#transformGrad)" opacity="0.7"/>
+    <circle cx="45" cy="0" r="1" fill="url(#transformGrad)" opacity="0.5"/>
+    
+    <circle cx="15" cy="18" r="1" fill="url(#transformGrad)" opacity="0.7"/>
+    <circle cx="25" cy="17" r="1.5" fill="url(#transformGrad)" opacity="0.6"/>
+    <circle cx="35" cy="19" r="1" fill="url(#transformGrad)" opacity="0.8"/>
+    <circle cx="50" cy="20" r="1" fill="url(#transformGrad)" opacity="0.5"/>
+    
+    <!-- Digital flow lines -->
+    <path d="M 5 8 Q 15 4 25 8 Q 35 12 45 8" stroke="url(#transformGrad)" stroke-width="1" fill="none" opacity="0.4"/>
+  </g>
+  
+  <!-- Digital business (right side) -->
+  <g transform="translate(135, 25)">
+    <!-- Modern building -->
+    <rect x="0" y="20" width="50" height="45" fill="url(#transformGrad)" rx="4"/>
+    <rect x="3" y="23" width="44" height="39" fill="#0f172a" rx="2"/>
+    
+    <!-- Digital windows/screens -->
+    <rect x="8" y="28" width="8" height="6" fill="#06b6d4" rx="1"/>
+    <rect x="20" y="28" width="8" height="6" fill="#3b82f6" rx="1"/>
+    <rect x="32" y="28" width="8" height="6" fill="#8b5cf6" rx="1"/>
+    
+    <rect x="8" y="38" width="8" height="6" fill="#10b981" rx="1"/>
+    <rect x="20" y="38" width="8" height="6" fill="#f59e0b" rx="1"/>
+    <rect x="32" y="38" width="8" height="6" fill="#ef4444" rx="1"/>
+    
+    <rect x="8" y="48" width="8" height="6" fill="#06b6d4" rx="1"/>
+    <rect x="20" y="48" width="8" height="6" fill="#8b5cf6" rx="1"/>
+    <rect x="32" y="48" width="8" height="6" fill="#10b981" rx="1"/>
+    
+    <!-- Digital entrance -->
+    <rect x="20" y="57" width="10" height="8" fill="#06b6d4" rx="1"/>
+    <rect x="22" y="59" width="6" height="4" fill="#0f172a"/>
+    
+    <!-- Antenna/signal -->
+    <line x1="25" y1="20" x2="25" y2="10" stroke="url(#transformGrad)" stroke-width="2"/>
+    <circle cx="25" cy="10" r="2" fill="none" stroke="url(#transformGrad)" stroke-width="1"/>
+    <circle cx="25" cy="10" r="4" fill="none" stroke="url(#transformGrad)" stroke-width="0.5" opacity="0.6"/>
+    <circle cx="25" cy="10" r="6" fill="none" stroke="url(#transformGrad)" stroke-width="0.5" opacity="0.4"/>
+    
+    <!-- Cloud integration -->
+    <ellipse cx="25" cy="75" rx="20" ry="8" fill="url(#transformGrad)" opacity="0.3"/>
+    <ellipse cx="15" cy="78" rx="12" ry="5" fill="url(#transformGrad)" opacity="0.4"/>
+    <ellipse cx="35" cy="79" rx="10" ry="4" fill="url(#transformGrad)" opacity="0.4"/>
+    
+    <!-- Cloud data -->
+    <rect x="20" y="74" width="10" height="3" fill="white" opacity="0.6" rx="1"/>
+    <rect x="22" y="76" width="6" height="1" fill="white" opacity="0.8"/>
+  </g>
+  
+  <!-- Digital transformation elements -->
+  <g transform="translate(20, 90)">
+    <!-- Process automation -->
+    <rect x="0" y="0" width="25" height="20" fill="white" rx="2" stroke="#cbd5e1"/>
+    <rect x="2" y="2" width="8" height="2" fill="url(#digitalGrad)" rx="1"/>
+    <rect x="2" y="6" width="12" height="1.5" fill="#64748b" rx="0.5"/>
+    <rect x="2" y="9" width="10" height="1.5" fill="#64748b" rx="0.5"/>
+    <rect x="2" y="12" width="15" height="1.5" fill="#64748b" rx="0.5"/>
+    <rect x="2" y="15" width="8" height="1.5" fill="#64748b" rx="0.5"/>
+    
+    <!-- Automation icon -->
+    <circle cx="18" cy="10" r="4" fill="url(#digitalGrad)" opacity="0.2"/>
+    <path d="M 16 10 L 18 12 L 20 8" stroke="url(#digitalGrad)" stroke-width="1" fill="none"/>
+  </g>
+  
+  <g transform="translate(55, 100)">
+    <!-- Analytics dashboard -->
+    <rect x="0" y="0" width="30" height="15" fill="white" rx="2" stroke="#cbd5e1"/>
+    <rect x="2" y="2" width="12" height="2" fill="url(#transformGrad)" rx="1"/>
+    <rect x="2" y="6" width="8" height="1" fill="#64748b" rx="0.5"/>
+    <rect x="2" y="8" width="10" height="1" fill="#64748b" rx="0.5"/>
+    
+    <!-- Mini chart -->
+    <rect x="16" y="5" width="2" height="4" fill="url(#transformGrad)"/>
+    <rect x="19" y="3" width="2" height="6" fill="url(#transformGrad)"/>
+    <rect x="22" y="6" width="2" height="3" fill="url(#transformGrad)"/>
+    <rect x="25" y="2" width="2" height="7" fill="url(#transformGrad)"/>
+  </g>
+  
+  <g transform="translate(95, 95)">
+    <!-- Mobile integration -->
+    <rect x="0" y="0" width="15" height="25" fill="#1e293b" rx="3"/>
+    <rect x="1" y="2" width="13" height="19" fill="#000000" rx="2"/>
+    <rect x="2" y="3" width="11" height="17" fill="#0f172a"/>
+    
+    <!-- App screens -->
+    <rect x="3" y="5" width="9" height="2" fill="url(#digitalGrad)" rx="0.5"/>
+    <rect x="3" y="8" width="6" height="1" fill="#64748b" rx="0.3"/>
+    <rect x="3" y="10" width="8" height="1" fill="#64748b" rx="0.3"/>
+    <rect x="3" y="12" width="5" height="1" fill="#64748b" rx="0.3"/>
+    
+    <!-- Signal bars -->
+    <rect x="9" y="17" width="1" height="1" fill="#10b981"/>
+    <rect x="10" y="16" width="1" height="2" fill="#10b981"/>
+    <rect x="11" y="15" width="1" height="3" fill="#10b981"/>
+    
+    <!-- Home button -->
+    <circle cx="7.5" cy="22" r="1" fill="#374151"/>
+  </g>
+  
+  <g transform="translate(120, 105)">
+    <!-- IoT devices -->
+    <rect x="0" y="0" width="12" height="8" fill="url(#transformGrad)" rx="1"/>
+    <rect x="1" y="1" width="10" height="6" fill="#0f172a" rx="0.5"/>
+    <circle cx="6" cy="4" r="2" fill="url(#transformGrad)" opacity="0.3"/>
+    <circle cx="6" cy="4" r="1" fill="url(#transformGrad)"/>
+    
+    <!-- Sensor readings -->
+    <rect x="15" y="1" width="8" height="1" fill="#10b981" rx="0.3"/>
+    <rect x="15" y="3" width="6" height="0.8" fill="#64748b" rx="0.3"/>
+    <rect x="15" y="5" width="7" height="0.8" fill="#64748b" rx="0.3"/>
+  </g>
+  
+  <!-- Connection network -->
+  <g stroke="url(#transformGrad)" stroke-width="1" fill="none" opacity="0.5" stroke-dasharray="2,2">
+    <!-- Traditional to digital connections -->
+    <path d="M 65 75 Q 100 85 160 65"/>
+    <path d="M 40 110 Q 70 115 90 110"/>
+    <path d="M 70 115 Q 100 105 125 110"/>
+    <path d="M 135 115 Q 155 105 160 85"/>
+  </g>
+  
+  <!-- Network nodes -->
+  <circle cx="40" cy="110" r="2" fill="url(#digitalGrad)"/>
+  <circle cx="70" cy="115" r="2" fill="url(#transformGrad)"/>
+  <circle cx="100" cy="110" r="2" fill="url(#digitalGrad)"/>
+  <circle cx="125" cy="110" r="2" fill="url(#transformGrad)"/>
+  <circle cx="160" cy="85" r="2" fill="url(#transformGrad)"/>
+  
+  <!-- Digital transformation label -->
+  <g transform="translate(70, 15)" opacity="0.7">
+    <rect x="0" y="0" width="60" height="12" fill="white" rx="6" stroke="#cbd5e1"/>
+    <rect x="5" y="3" width="25" height="2" fill="url(#digitalGrad)" rx="1"/>
+    <rect x="5" y="7" width="20" height="1.5" fill="#64748b" rx="0.5"/>
+    
+    <!-- Digital icon -->
+    <circle cx="45" cy="6" r="4" fill="url(#digitalGrad)" opacity="0.2"/>
+    <rect x="43" y="4" width="1" height="4" fill="url(#digitalGrad)"/>
+    <rect x="45" y="4" width="1" height="4" fill="url(#digitalGrad)"/>
+    <rect x="47" y="4" width="1" height="4" fill="url(#digitalGrad)"/>
+  </g>
+</svg>

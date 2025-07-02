@@ -1,0 +1,28 @@
+{
+  "name": "Squad Soluções - Tecnologia e Consultoria",
+  "short_name": "Squad Soluções",
+  "description": "Soluções tecnológicas inovadoras em TI e consultoria",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a365d",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["technology", "business", "productivity"],
+  "lang": "pt-BR"
+}
