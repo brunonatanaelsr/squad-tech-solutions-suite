@@ -47,4 +47,16 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## API Config & Auth Debug
+
+- Set your backend URL in an env file:
+  - Copy `.env.example` to `.env.local` and set `VITE_API_URL` (defaults to `http://localhost:3001`).
+- A minimal debug page is available at `/#/auth` (HashRouter) to test login requests:
+  - It posts to `POST ${VITE_API_URL}/auth/login` with `credentials: 'include'`.
+  - Use it to validate CORS, cookies, and status codes (expects `401` for invalid credentials).
+
+### Terminal test
+
+- Quick test script: `scripts/curl-login.sh [API_URL] [EMAIL] [PASSWORD]`
+  - Example: `scripts/curl-login.sh http://localhost:3001 bruno@move.com 15002031`
 

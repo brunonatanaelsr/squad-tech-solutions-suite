@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import LazyLoading from "./components/LazyLoading";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -26,6 +26,7 @@ const DigitalTransformationArticle = lazy(() => import("./pages/blog/DigitalTran
 const RentalArticle = lazy(() => import("./pages/blog/RentalArticle"));
 const ERPArticle = lazy(() => import("./pages/blog/ERPArticle"));
 const CloudArticle = lazy(() => import("./pages/blog/CloudArticle"));
+const AuthDebug = lazy(() => import("./pages/AuthDebug"));
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -57,6 +58,7 @@ const AppContent = () => {
         <Route path="/blog/5" element={<ERPArticle />} />
         <Route path="/blog/6" element={<CloudArticle />} />
         <Route path="/contato" element={<ContactPage />} />
+        <Route path="/auth" element={<AuthDebug />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
@@ -69,9 +71,9 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <HashRouter>
           <AppContent />
-        </BrowserRouter>
+        </HashRouter>
       </TooltipProvider>
     </QueryClientProvider>
   </ErrorBoundary>
